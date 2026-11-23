@@ -1,0 +1,45 @@
+# ---- Go 编译产物（go build 生成的可执行文件）----
+# go build . 在根目录生成
+/go-explorer
+# go build . 在各实验子目录生成（文件名 = 目录名）
+/listing6_no_gosched/listing6_no_gosched
+/mutex-lab/atomic/atomic
+/mutex-lab/mutex/mutex
+/mutex-lab/nolock/nolock
+/mutex-lab/safe/safe
+
+# 通用 Go 构建 / 测试产物
+*.exe
+*.exe~
+*.dll
+*.so
+*.dylib
+*.a
+*.test
+*.out
+coverage.out
+
+# ---- 密钥与本地环境（绝不入库）----
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+*.p12
+*.pfx
+*.jks
+id_rsa
+id_dsa
+id_ecdsa
+id_ed25519
+secrets/
+credentials/
+*.keystore
+
+# ---- 编辑器 / IDE / 系统文件 ----
+.idea/
+.vscode/
+*.swp
+*.swo
+.DS_Store
+Thumbs.db
